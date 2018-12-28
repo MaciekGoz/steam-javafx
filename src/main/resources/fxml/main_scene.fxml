@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.maciek.steam.main.MainController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="904.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Steam">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Change account" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View" />
+                <Menu mnemonicParsing="false" text="Friends">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Friends List" />
+                        <MenuItem mnemonicParsing="false" text="Add Friend" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Games" />
+                  <Menu mnemonicParsing="false" text="Help" />
+              </menus>
+            </MenuBar>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="643.0" spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="⬅" />
+                        <Button mnemonicParsing="false" text="➡" />
+                        <Button fx:id="storeButton" mnemonicParsing="false" onAction="#onStoreButtonClick" text="STORE" />
+                        <Button fx:id="libraryButton" mnemonicParsing="false" onAction="#onLibraryButtonClick" text="LIBRARY" />
+                        <Button fx:id="communityButton" mnemonicParsing="false" onAction="#onCommunityButtonClick" text="COMMUNITY" />
+                        <Button fx:id="userButton" mnemonicParsing="false" onAction="#onUserButtonClick" text="&lt;USERNAME&gt;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="250.0" spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="🎺" />
+                        <Button mnemonicParsing="false" text="📧" />
+                        <Button mnemonicParsing="false" text="&lt; &lt;USERNAME&gt; &lt;WALLET&gt; &gt;" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="anchorPane" layoutX="2.0" layoutY="69.0" prefHeight="530.0" prefWidth="900.0" />
+   </children>
+</AnchorPane>
